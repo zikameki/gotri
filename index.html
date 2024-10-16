@@ -1,116 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsip latgab</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona Trisula</title>
+  <style>
+    /* Mengatur elemen dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-            color: #FFD700;
-        }
+    /* Mengatur tampilan body untuk menempatkan konten di tengah layar */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0d0d0d;
+      font-family: 'Arial', sans-serif;
+    }
 
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 10px; /* Spacing between buttons */
-        }
+    /* Mengatur container agar teks dan tombol berada di tengah dan berwarna putih */
+    .container {
+      text-align: center;
+      color: white;
+    }
 
-        .filter-buttons button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            border: 2px solid #9400D3;
-            background-color: #FFF5EE;
-            color: #00CED1;
-            border-radius: 50px; /* Rounded buttons */
-            transition: background-color 0.3s, border-color 0.3s;
-        }
+    /* Efek neon pada teks */
+    .neon {
+      font-size: 8vw; /* Menggunakan vw agar teks responsif */
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      color: #fff;
+      text-shadow: 
+        0 0 5px #00ffea,
+        0 0 10px #00ffea,
+        0 0 20px #00ffea,
+        0 0 30px #00ffea,
+        0 0 40px #f0f,
+        0 0 70px #f0f,
+        0 0 80px #f0f;
+      animation: neon-flicker 1.5s infinite alternate;
+      margin-bottom: 30px; /* Menambahkan jarak di bawah teks */
+      text-align: center; /* Agar teks rata tengah */
+    }
 
-        .filter-buttons button.active,
-        .filter-buttons button:hover {
-            background-color: white;
-            color: #228B22;
-            border-color: #FF00FF;
-        }
+    /* Animasi flicker untuk teks neon */
+    @keyframes neon-flicker {
+      0%, 100% {
+        text-shadow: 
+          0 0 5px #00ffea,
+          0 0 10px #00ffea,
+          0 0 20px #00ffea,
+          0 0 30px #00ffea,
+          0 0 40px #f0f,
+          0 0 70px #f0f,
+          0 0 80px #f0f;
+      }
+      50% {
+        text-shadow: 
+          0 0 8px #00ffea,
+          0 0 15px #00ffea,
+          0 0 25px #00ffea,
+          0 0 35px #00ffea,
+          0 0 50px #f0f,
+          0 0 90px #f0f,
+          0 0 100px #f0f;
+      }
+    }
 
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    /* Mengatur jarak atas untuk container tombol */
+    .button-container {
+      margin-top: 30px;
+    }
 
-        .media-item {
-            background-color: lightgrey;
-            padding: 1px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 100%;
-        }
+    /* Mengatur gaya tombol */
+    .btn {
+      background: none;
+      color: #9400D3;
+      padding: 12px 25px;
+      margin: 15px;
+      font-size: 18px;
+      border: 2px solid #FF00FF;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.4s, border-color 0.4s, color 0.4s;
+    }
 
-        .media-item img,
-        .media-item video,
-        .media-item audio {
-            max-width: 100%;
-            border-radius: 8px;
-        }
+    /* Efek hover pada tombol */
+    .btn:hover {
+      background-color: #000000;
+      border-color: #00FFFF;
+      color: #7CFC00;
+    }
 
-        .media-item h2 {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #DEB887;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <h1>لا غالب الا بالله</h1>
-    <div class="filter-buttons">
-        <button class="filter-btn active" onclick="window.location.href='https://www.instagram.com/slaughter.society?igsh=MTduaWdjbGVjaXc2eg=='">🔥</button>
-        <button class="filter-btn" onclick="window.location.href='https://zikameki.github.io/gotri-video/'">Videos</button>
-        <button class="filter-btn" onclick="window.location.href='https://zikameki.github.io/gotri-audio/'">Audios</button>
-        <button class="filter-btn" onclick="window.location.href='https://zikameki.github.io/gotri-image/'">Photos</button>
+
+  <div class="container">
+    <!-- Teks dengan efek neon, ukuran teks responsif -->
+    <div class="neon">Pagar nusa</div>
+    <!-- Kontainer tombol dengan tautan -->
+    <div class="button-container">
+      <a href="https://zikameki.github.io/gotri-image/"><button class="btn">Photo</button></a>
+      <a href="https://zikameki.github.io/gotri-video/"><button class="btn">Video</button></a>
+      <a href="https://zikameki.github.io/gotri-audio/"><button class="btn">Audio</button></a>
     </div>
+  </div>
 
-        <!-- Image Item -->
-        <div class="media-item" data-type="photo">
-            <img src="image.jpg" alt="Foto 1">
-        </div>
-      
-
-        <!-- Tambahkan lebih banyak video, audio, atau foto di sini -->
-    </div>
-
-    <script>
-        function filterMedia(type) {
-            const allItems = document.querySelectorAll('.media-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            buttons.forEach(button => button.classList.remove('active'));
-            document.querySelector(`[onclick="filterMedia('${type}')"]`).classList.add('active');
-
-            allItems.forEach(item => {
-                if (type === 'all' || item.getAttribute('data-type') === type) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
